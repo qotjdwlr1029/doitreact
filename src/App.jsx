@@ -5,7 +5,10 @@ import React from 'react';
 //import BooleanComponent from './03/BooleanComponent';
 //import ChildComponent2 from './03/ChildComponent2';
 //import DefaultPropsComponent from './03/DefaultPropsComponent';
-import ChildProperty from './03/ChildProperty';
+//import ChildProperty from './03/ChildProperty';
+//import StateExample from './03/StateExample';
+import ForceUpdateExample from './03/ForceUpdateExample';
+import Counter from './03/Counter';
 
 /*class App extends React.Component{
     render(){
@@ -72,13 +75,23 @@ export default App;*/
     }
 }*/
 
-class App extends React.Component {
+/*class App extends React.Component {
     render() {
         return (
             <div>
                 <ChildProperty>
                     <div><span>자식 노드</span></div>
                 </ChildProperty>
+            </div>
+        );
+    }
+}*/
+
+class App extends React.Component {
+    render() {
+        return (
+            <div>
+                <Counter/>
             </div>
         );
     }
