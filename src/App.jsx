@@ -7,8 +7,10 @@ import React from 'react';
 //import DefaultPropsComponent from './03/DefaultPropsComponent';
 //import ChildProperty from './03/ChildProperty';
 //import StateExample from './03/StateExample';
-import ForceUpdateExample from './03/ForceUpdateExample';
+//import ForceUpdateExample from './03/ForceUpdateExample';
 import Counter from './03/Counter';
+import NewCounter from './03/NewCounter';
+//import LifeCycleComponent from './03/LifeCycleComponent';
 
 /*class App extends React.Component{
     render(){
@@ -87,13 +89,35 @@ export default App;*/
     }
 }*/
 
-class App extends React.Component {
+/*class App extends React.Component {
     render() {
         return (
             <div>
-                <Counter/>
+                <LifeCycleComponent/>
             </div>
         );
+    }
+}*/
+
+class App extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = { count : 10 };
+        this.resetCount = this.resetCount.bind(this)
+    }
+
+    resetCount(){
+        this.setState(({ count }) => ({ count : count + 10 }));
+    }
+
+    render(){
+        return(
+            <div>
+                <div><Counter count={this.state.count}/></div>
+                <div><NewCounter count={this.state.count}/></div>
+                <button onClick={this.resetCount}>{this.state.count + 10}으로 초기화</button>
+            </div>
+        )
     }
 }
 
