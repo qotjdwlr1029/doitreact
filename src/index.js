@@ -2,7 +2,8 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 //import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App.jsx';
+//import App from './App.jsx';
+import CounterApp from './03/CounterApp.jsx';
 import * as serviceWorker from './serviceWorker';
 
 //ReactDOM.render(<App />, document.getElementById('root'));
@@ -12,7 +13,7 @@ import * as serviceWorker from './serviceWorker';
 // Learn more about service workers: https://bit.ly/CRA-PWA
 
 const root = createRoot(document.getElementById('root'));
-root.render(<App/>);
+root.render(<CounterApp/>);
 serviceWorker.unregister();
 
 /*var img = document.createElement('img');
