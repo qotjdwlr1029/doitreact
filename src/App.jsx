@@ -1,5 +1,7 @@
 import React from 'react';
-import TodoList from './03/TodoList';
+import Counter3 from './03/Counter3';
+import ScrollSpy from './03/ScrollSpy';
+// import TodoList from './03/TodoList';
 // import ListExample from './03/ListExample';
 //import TodaysPlan from './03/TodaysPlan';
 //import PropsComponent from './03/PropsComponent';
@@ -189,7 +191,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <TodoList/>
+                <ScrollSpy/>
             </div>
         );
     }
