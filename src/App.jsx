@@ -1,6 +1,7 @@
 import React from 'react';
 import Counter3 from './03/Counter3';
 import ScrollSpy from './03/ScrollSpy';
+import Input from './03/Input';
 // import TodoList from './03/TodoList';
 // import ListExample from './03/ListExample';
 //import TodaysPlan from './03/TodaysPlan';
@@ -191,7 +192,11 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <ScrollSpy/>
+                <nav>
+                    <div class="nav-wrapper">
+                        <div>두잇! 리액트 시작하기</div>
+                    </div>
+                </nav>
             </div>
         );
     }
