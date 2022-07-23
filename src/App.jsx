@@ -2,6 +2,7 @@ import React from 'react';
 import Counter3 from './03/Counter3';
 import ScrollSpy from './03/ScrollSpy';
 import Input from './03/Input';
+import JSXSample from './03/JSXSample';
 // import TodoList from './03/TodoList';
 // import ListExample from './03/ListExample';
 //import TodaysPlan from './03/TodaysPlan';
@@ -193,10 +194,11 @@ class App extends React.Component {
         return (
             <div>
                 <nav>
-                    <div class="nav-wrapper">
+                    <div className="nav-wrapper">
                         <div>두잇! 리액트 시작하기</div>
                     </div>
                 </nav>
+                <h1>머터리얼 CSS</h1>
             </div>
         );
     }

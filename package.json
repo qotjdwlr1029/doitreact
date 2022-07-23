@@ -1,5 +1,5 @@
 {
-  "name": "do-it-example",
+  "name": "do-it-examples",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -52,6 +52,6 @@
     "react-with-styles-interface-aphrodite": "^5.0.1",
     "redux-devtools-extension": "^2.13.8",
     "sass-loader": "^7.1.0",
-    "storybook-addon-jsx": "^7.3.13"
+    "storybook-addon-jsx": "^7.1.13"
   }
 }
